@@ -1,0 +1,83 @@
+
+Gurobi 9.5.0 (linux64) logging started Fri Apr 29 17:43:15 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new0U_R25_M20_N300_seed6_original_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 820 rows, 6500 columns and 13000 nonzeros
+Model fingerprint: 0xc1c1d485
+Variable types: 0 continuous, 6500 integer (6500 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+03]
+  Objective range  [3e+00, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve removed 49 rows and 573 columns
+Presolve time: 0.03s
+Presolved: 771 rows, 5927 columns, 11854 nonzeros
+Variable types: 0 continuous, 5927 integer (5927 binary)
+Found heuristic solution: objective -53485.00000
+
+Root relaxation: objective -1.201783e+05, 2973 iterations, 0.04 seconds (0.03 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -120178.33    0   81 -53485.000 -120178.33   125%     -    0s
+H    0     0                    -91447.00000 -120178.33  31.4%     -    0s
+H    0     0                    -91528.00000 -120178.33  31.3%     -    0s
+H    0     0                    -94614.00000 -120178.33  27.0%     -    0s
+     0     0 -120123.02    0  225 -94614.000 -120123.02  27.0%     -    0s
+H    0     0                    -95106.00000 -120123.02  26.3%     -    0s
+     0     0 -119909.16    0  202 -95106.000 -119909.16  26.1%     -    0s
+     0     0 -119715.80    0  195 -95106.000 -119715.80  25.9%     -    0s
+     0     0 -119626.82    0  195 -95106.000 -119626.82  25.8%     -    0s
+     0     0 -119200.66    0  304 -95106.000 -119200.66  25.3%     -    0s
+     0     0 -119200.66    0  130 -95106.000 -119200.66  25.3%     -    0s
+     0     2 -119200.66    0  106 -95106.000 -119200.66  25.3%     -    0s
+H   30    35                    -95299.00000 -119200.66  25.1%   232    1s
+H   31    35                    -95303.00000 -119200.66  25.1%   227    1s
+H   33    35                    -96470.00000 -119200.66  23.6%   217    1s
+H  111   113                    -97861.00000 -119200.66  21.8%   104    1s
+H  139   142                    -97865.00000 -119200.66  21.8%  90.3    1s
+H  466   471                    -98137.00000 -119200.66  21.5%  48.8    2s
+H  467   471                    -98710.00000 -119200.66  20.8%  48.7    2s
+H  468   471                    -98892.00000 -119200.66  20.5%  48.6    2s
+H 1291  1176                    -99375.00000 -112475.65  13.2%  38.5    4s
+  1332  1207 -112451.23   25  132 -99375.000 -112465.65  13.2%  40.3    5s
+H 1371  1172                    -99680.00000 -112465.65  12.8%  41.1    5s
+H 1669  1326                    -99773.00000 -112465.65  12.7%  42.3    6s
+H 1955  1465                    -99846.00000 -112465.65  12.6%  45.5    7s
+H 1975  1441                    -100383.0000 -112465.65  12.0%  45.6    7s
+H 3020  2039                    -100438.0000 -112465.65  12.0%  45.9    9s
+H 3021  1992                    -100566.0000 -112465.65  11.8%  45.9    9s
+H 3283  2108                    -101665.0000 -112465.65  10.6%  45.3    9s
+  3329  2327 -105559.48  248   61 -101665.00 -112465.65  10.6%  44.9   10s
+H 4369  2989                    -101688.0000 -112465.51  10.6%  38.7   10s
+H 6481  4722                    -101871.0000 -112398.08  10.3%  32.0   11s
+ 10692  8452 -110104.61   61  114 -101871.00 -112122.59  10.1%  28.9   15s
+H14942 11975                    -102127.0000 -111786.60  9.46%  27.0   17s
+ 19006 15774 -104764.23  121   61 -102127.00 -111699.95  9.37%  26.6   20s
+H21364 17056                    -102445.0000 -111609.52  8.95%  26.8   30s
+ 21398 17080 -102885.17   60  440 -102445.00 -102885.17  0.43%  27.6   35s
+
+Cutting planes:
+  Gomory: 16
+  Cover: 26
+  Clique: 19
+  MIR: 6
+  StrongCG: 10
+  Flow cover: 21
+  Zero half: 5
+  RLT: 1
+  Relax-and-lift: 4
+
+Explored 21554 nodes (635450 simplex iterations) in 39.29 seconds (42.90 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 10: -102445 -102445 -102157 ... -100383
+No other solutions better than -102445
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.024450000000e+05, best bound -1.024450000000e+05, gap 0.0000%

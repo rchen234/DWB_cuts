@@ -1,0 +1,50 @@
+
+Gurobi 9.5.0 (linux64) logging started Fri Apr  1 06:57:11 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/MKAP_10_200_25_6_DWcutsT1.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 960 rows, 2250 columns and 9000 nonzeros
+Model fingerprint: 0xc6ea37d6
+Variable types: 0 continuous, 2250 integer (2250 binary)
+Coefficient statistics:
+  Matrix range     [3e-06, 6e+03]
+  Objective range  [1e+01, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve time: 0.03s
+Presolved: 960 rows, 2250 columns, 8690 nonzeros
+Variable types: 0 continuous, 2250 integer (2250 binary)
+Found heuristic solution: objective -3728.000000
+Warning: Markowitz tolerance tightened to 0.0625
+
+Root relaxation: objective -4.471000e+04, 4384 iterations, 0.11 seconds (0.10 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -44710.001    0  140 -3728.0000 -44710.001  1099%     -    0s
+H    0     0                    -34789.00000 -44710.001  28.5%     -    0s
+H    0     0                    -38852.00000 -44710.001  15.1%     -    0s
+H    0     0                    -43396.00000 -44710.001  3.03%     -    0s
+H    0     0                    -44710.00003 -44710.001  0.00%     -    0s
+     0     0 -44710.001    0  226 -44710.000 -44710.001  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 13
+  Cover: 23
+  Clique: 399
+  MIR: 15
+  StrongCG: 11
+  RLT: 1
+
+Explored 1 nodes (4873 simplex iterations) in 0.25 seconds (0.20 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 6: -44710 -43396 -38852 ... 0
+No other solutions better than -44710
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (5.9691e-06) exceeds tolerance
+Best objective -4.471000002865e+04, best bound -4.471000002865e+04, gap 0.0000%

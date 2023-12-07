@@ -1,0 +1,75 @@
+
+Gurobi 9.5.0 (linux64) logging started Mon Jun 20 11:56:59 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new0U_R25_M30_N100_seed8_DWcutsCTp3_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 2749 rows, 3750 columns and 13897 nonzeros
+Model fingerprint: 0x50e74a7d
+Variable types: 0 continuous, 3750 integer (3750 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 2e+03]
+  Objective range  [2e+01, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-05, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 1036 rows and 1177 columns
+Presolve time: 0.05s
+Presolved: 1713 rows, 2573 columns, 8138 nonzeros
+Found heuristic solution: objective -19127.00000
+Variable types: 0 continuous, 2573 integer (2573 binary)
+
+Root relaxation: objective -3.686649e+04, 3892 iterations, 0.07 seconds (0.06 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -36866.494    0  270 -19127.000 -36866.494  92.7%     -    0s
+H    0     0                    -33516.00000 -36866.494  10.0%     -    0s
+H    0     0                    -35822.00004 -36866.494  2.92%     -    0s
+H    0     0                    -35886.00000 -36866.494  2.73%     -    0s
+H    0     0                    -36303.00000 -36866.494  1.55%     -    0s
+     0     0 -36839.609    0  262 -36303.000 -36839.609  1.48%     -    0s
+H    0     0                    -36317.00000 -36839.609  1.44%     -    0s
+H    0     0                    -36493.00000 -36839.609  0.95%     -    0s
+     0     0 -36815.537    0  262 -36493.000 -36815.537  0.88%     -    0s
+H    0     0                    -36551.00007 -36815.537  0.72%     -    0s
+H    0     0                    -36703.00001 -36815.537  0.31%     -    0s
+     0     0 -36815.527    0  247 -36703.000 -36815.527  0.31%     -    0s
+     0     0 -36815.527    0  247 -36703.000 -36815.527  0.31%     -    0s
+     0     0 -36815.226    0  133 -36703.000 -36815.226  0.31%     -    0s
+     0     0 -36815.134    0  189 -36703.000 -36815.134  0.31%     -    0s
+     0     0 -36813.822    0  182 -36703.000 -36813.822  0.30%     -    0s
+     0     0 -36813.462    0  182 -36703.000 -36813.462  0.30%     -    0s
+     0     0 -36813.345    0  177 -36703.000 -36813.345  0.30%     -    0s
+     0     0 -36813.345    0  177 -36703.000 -36813.345  0.30%     -    0s
+H    0     0                    -36757.00000 -36813.345  0.15%     -    0s
+     0     0 -36813.345    0   66 -36757.000 -36813.345  0.15%     -    0s
+     0     0 -36808.005    0   97 -36757.000 -36808.005  0.14%     -    0s
+     0     0 -36807.506    0   97 -36757.000 -36807.506  0.14%     -    0s
+     0     0 -36807.334    0   77 -36757.000 -36807.334  0.14%     -    0s
+     0     0 -36805.015    0   91 -36757.000 -36805.015  0.13%     -    0s
+     0     0 -36805.015    0   91 -36757.000 -36805.015  0.13%     -    0s
+     0     0 -36805.015    0   94 -36757.000 -36805.015  0.13%     -    0s
+     0     0 -36805.015    0   95 -36757.000 -36805.015  0.13%     -    0s
+H    0     0                    -36788.00006 -36805.015  0.05%     -    0s
+     0     0 -36805.015    0   93 -36788.000 -36805.015  0.05%     -    0s
+*    0     0               0    -36800.00008 -36800.000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 17
+  Cover: 1
+  Clique: 4
+  MIR: 1
+  Zero half: 4
+
+Explored 1 nodes (7487 simplex iterations) in 0.73 seconds (0.50 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 10: -36800 -36788 -36757 ... -35822
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -3.680000000000e+04, best bound -3.680000000000e+04, gap 0.0000%

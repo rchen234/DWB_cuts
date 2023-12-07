@@ -1,0 +1,63 @@
+
+Gurobi 9.5.0 (linux64) logging started Sat Apr 16 03:28:52 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new2S_R10_M20_N300_seed1_DWcutsT3_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 2118 rows, 6200 columns and 61311 nonzeros
+Model fingerprint: 0x74f6b13f
+Variable types: 0 continuous, 6200 integer (6200 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 1e+04]
+  Objective range  [5e+01, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-07, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 135 rows and 602 columns
+Presolve time: 0.12s
+Presolved: 1983 rows, 5598 columns, 55418 nonzeros
+Found heuristic solution: objective -19786.00000
+Variable types: 0 continuous, 5598 integer (5598 binary)
+Warning: 1 variables dropped from basis
+Warning: switch to quad precision
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   29269   -1.0304877e+05   0.000000e+00   3.302713e+02      5s
+   43062   -1.0304876e+05   0.000000e+00   2.710575e-01     10s
+   57003   -1.0304877e+05   0.000000e+00   1.196551e+02     15s
+Warning: 1 variables dropped from basis
+   71396   -1.0304877e+05   0.000000e+00   1.878895e+02     20s
+Warning: 1 variables dropped from basis
+   86034   -1.0304872e+05   1.181745e+04   0.000000e+00     25s
+Warning: 1 variables dropped from basis
+Warning: 1 variables dropped from basis
+Warning: 1 variables dropped from basis
+  101526   -1.0304877e+05   0.000000e+00   5.637208e+03     30s
+
+Root relaxation: numerical trouble, 276333 iterations, 85.00 seconds (64.28 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  postponed    0      -19786.000 -3329298.0      -     -   85s
+     0     0  postponed    0      -19786.000 -3329298.0      -     -  170s
+     0     2  postponed    0      -19786.000 -3329298.0      -     -  271s
+     1     4  postponed    1      -19786.000 -3329298.0      - 103457  285s
+     3     8  postponed    2      -19786.000 -3329298.0      - 54673  304s
+     9    12  postponed    3      -19786.000 -3329298.0      - 33097  307s
+    12    13 -3329298.0    4    0 -19786.000 -3329298.0      - 24823  338s
+    14    14 -3329298.0    4    0 -19786.000 -3329298.0      - 21276  433s
+    15    15 -3329298.0    3    0 -19786.000 -3329298.0      - 19858  528s
+
+Explored 16 nodes (1509887 simplex iterations) in 600.01 seconds (486.72 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 2: -19786 0 
+
+Time limit reached
+Best objective -1.978600000000e+04, best bound -3.329298000000e+06, gap 16726.5339%

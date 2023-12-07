@@ -1,0 +1,70 @@
+
+Gurobi 9.5.0 (linux64) logging started Sat Jun 18 16:21:27 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new0U_R10_M10_N300_seed1_DWcutsCTp3_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 1139 rows, 3100 columns and 28776 nonzeros
+Model fingerprint: 0xa0a2c20a
+Variable types: 0 continuous, 3100 integer (3100 binary)
+Coefficient statistics:
+  Matrix range     [3e-13, 1e+04]
+  Objective range  [6e+00, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-05, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 2 rows and 0 columns
+Presolve time: 0.05s
+Presolved: 1137 rows, 3100 columns, 28615 nonzeros
+Variable types: 0 continuous, 3100 integer (3100 binary)
+Found heuristic solution: objective -16423.00000
+
+Root relaxation: objective -1.192040e+05, 12209 iterations, 0.74 seconds (1.28 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -119204.02    0  449 -16423.000 -119204.02   626%     -    0s
+H    0     0                    -76891.00000 -119204.02  55.0%     -    0s
+H    0     0                    -102512.0000 -119204.02  16.3%     -    0s
+H    0     0                    -102544.0000 -119204.02  16.2%     -    0s
+H    0     0                    -110676.0000 -119204.02  7.71%     -    0s
+H    0     0                    -111821.0000 -119204.02  6.60%     -    1s
+     0     0 -119204.02    0  323 -111821.00 -119204.02  6.60%     -    1s
+H    0     0                    -118167.0000 -119204.02  0.88%     -    1s
+     0     0 -119204.02    0  329 -118167.00 -119204.02  0.88%     -    1s
+     0     0 -119204.02    0  321 -118167.00 -119204.02  0.88%     -    2s
+     0     0 -119204.02    0  319 -118167.00 -119204.02  0.88%     -    3s
+H    0     0                    -118894.0000 -119204.02  0.26%     -    3s
+H    0     0                    -118967.0000 -119204.02  0.20%     -    3s
+     0     0 -119204.02    0  382 -118967.00 -119204.02  0.20%     -    4s
+     0     0 -119204.02    0  507 -118967.00 -119204.02  0.20%     -    4s
+     0     0 -119204.02    0  281 -118967.00 -119204.02  0.20%     -    4s
+H    0     0                    -119055.0000 -119204.02  0.13%     -    5s
+     0     0 -119204.02    0  393 -119055.00 -119204.02  0.13%     -    5s
+     0     0 -119204.02    0  315 -119055.00 -119204.02  0.13%     -    5s
+     0     0 -119204.02    0  322 -119055.00 -119204.02  0.13%     -    5s
+     0     0 -119204.02    0  357 -119055.00 -119204.02  0.13%     -    6s
+     0     0 -119204.02    0  368 -119055.00 -119204.02  0.13%     -    6s
+     0     0 -119204.02    0  342 -119055.00 -119204.02  0.13%     -    6s
+     0     0 -119204.02    0  351 -119055.00 -119204.02  0.13%     -    7s
+     0     0 -119204.02    0  343 -119055.00 -119204.02  0.13%     -    7s
+H    0     0                    -119167.0000 -119204.02  0.03%     -    7s
+     0     0 -119204.02    0  185 -119167.00 -119204.02  0.03%     -    8s
+     0     0 -119204.02    0  321 -119167.00 -119204.02  0.03%     -    8s
+     0     0 -119204.02    0  198 -119167.00 -119204.02  0.03%     -    8s
+H    0     0                    -119204.0000 -119204.02  0.00%     -    8s
+     0     0 -119204.02    0  198 -119204.00 -119204.02  0.00%     -    8s
+
+Explored 1 nodes (55239 simplex iterations) in 8.34 seconds (10.46 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 10: -119204 -119167 -119055 ... -110676
+No other solutions better than -119204
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (4.7768e-06) exceeds tolerance
+Best objective -1.192040000173e+05, best bound -1.192040000176e+05, gap 0.0000%

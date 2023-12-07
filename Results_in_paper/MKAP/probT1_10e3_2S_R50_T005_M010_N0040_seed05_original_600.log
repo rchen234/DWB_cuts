@@ -1,0 +1,84 @@
+
+Gurobi 9.5.0 (linux64) logging started Sun Apr 10 18:20:41 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/probT1_10e3_2S_R50_T005_M010_N0040_seed05_original_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 100 rows, 450 columns and 900 nonzeros
+Model fingerprint: 0xc6aa6568
+Variable types: 0 continuous, 450 integer (450 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+03]
+  Objective range  [2e+02, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve removed 16 rows and 108 columns
+Presolve time: 0.00s
+Presolved: 84 rows, 342 columns, 684 nonzeros
+Variable types: 0 continuous, 342 integer (342 binary)
+Found heuristic solution: objective -11316.00000
+
+Root relaxation: objective -1.531704e+04, 195 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -15317.035    0   31 -11316.000 -15317.035  35.4%     -    0s
+H    0     0                    -13657.00000 -15317.035  12.2%     -    0s
+H    0     0                    -13829.00000 -15317.035  10.8%     -    0s
+     0     0 -15290.475    0   59 -13829.000 -15290.475  10.6%     -    0s
+H    0     0                    -14431.00000 -15290.227  5.95%     -    0s
+     0     0 -15290.227    0   59 -14431.000 -15290.227  5.95%     -    0s
+H    0     0                    -14467.00000 -15088.629  4.30%     -    0s
+     0     0 -15088.629    0   69 -14467.000 -15088.629  4.30%     -    0s
+     0     0 -15087.313    0   68 -14467.000 -15087.313  4.29%     -    0s
+     0     0 -15086.961    0   64 -14467.000 -15086.961  4.29%     -    0s
+     0     0 -15086.956    0   63 -14467.000 -15086.956  4.29%     -    0s
+H    0     0                    -14738.00000 -15076.518  2.30%     -    0s
+     0     0 -15076.518    0   59 -14738.000 -15076.518  2.30%     -    0s
+     0     0 -15074.089    0   60 -14738.000 -15074.089  2.28%     -    0s
+     0     0 -15073.999    0   66 -14738.000 -15073.999  2.28%     -    0s
+     0     0 -15064.763    0   91 -14738.000 -15064.763  2.22%     -    0s
+     0     0 -15062.596    0   95 -14738.000 -15062.596  2.20%     -    0s
+     0     0 -15061.782    0   99 -14738.000 -15061.782  2.20%     -    0s
+     0     0 -15061.778    0  101 -14738.000 -15061.778  2.20%     -    0s
+     0     0 -15054.532    0  104 -14738.000 -15054.532  2.15%     -    0s
+     0     0 -15050.715    0  102 -14738.000 -15050.715  2.12%     -    0s
+     0     0 -15050.035    0  112 -14738.000 -15050.035  2.12%     -    0s
+     0     0 -15050.021    0  110 -14738.000 -15050.021  2.12%     -    0s
+     0     0 -15043.276    0  128 -14738.000 -15043.276  2.07%     -    0s
+     0     0 -15042.222    0  114 -14738.000 -15042.222  2.06%     -    0s
+     0     0 -15041.984    0  117 -14738.000 -15041.984  2.06%     -    0s
+     0     0 -15034.693    0  118 -14738.000 -15034.693  2.01%     -    0s
+     0     0 -15033.699    0  125 -14738.000 -15033.699  2.01%     -    0s
+     0     0 -15032.386    0  128 -14738.000 -15032.386  2.00%     -    0s
+     0     0 -15032.318    0  132 -14738.000 -15032.318  2.00%     -    0s
+     0     0 -15030.785    0  129 -14738.000 -15030.785  1.99%     -    0s
+     0     0 -15030.785    0  129 -14738.000 -15030.785  1.99%     -    0s
+     0     2 -15030.498    0  129 -14738.000 -15030.498  1.98%     -    0s
+H  110   127                    -14773.00000 -15018.408  1.66%  31.3    0s
+H  159   160                    -14781.00000 -15018.408  1.61%  26.5    0s
+H  167   160                    -14787.00000 -15015.887  1.55%  26.4    0s
+H  423   292                    -14794.00000 -15005.020  1.43%  23.3    0s
+H  599   345                    -14818.00000 -14998.546  1.22%  22.0    0s
+* 3777   968              31    -14873.00000 -14956.996  0.56%  20.8    1s
+
+Cutting planes:
+  Gomory: 19
+  Cover: 72
+  Clique: 22
+  MIR: 63
+  StrongCG: 20
+  Flow cover: 6
+  Zero half: 3
+
+Explored 5515 nodes (118094 simplex iterations) in 1.81 seconds (2.03 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 10: -14873 -14818 -14794 ... -13829
+No other solutions better than -14873
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (1.7786e-06) exceeds tolerance
+Best objective -1.487300007334e+04, best bound -1.487300007334e+04, gap 0.0000%

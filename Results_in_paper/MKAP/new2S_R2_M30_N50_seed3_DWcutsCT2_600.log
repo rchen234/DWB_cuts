@@ -1,0 +1,52 @@
+
+Gurobi 9.5.0 (linux64) logging started Tue May  3 13:13:26 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new2S_R2_M30_N50_seed3_DWcutsCT2_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 274 rows, 1560 columns and 6130 nonzeros
+Model fingerprint: 0x3d376f21
+Variable types: 0 continuous, 1560 integer (1560 binary)
+Coefficient statistics:
+  Matrix range     [2e-13, 1e+03]
+  Objective range  [6e+01, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-16, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 75 rows and 945 columns
+Presolve time: 0.01s
+Presolved: 199 rows, 615 columns, 2524 nonzeros
+Found heuristic solution: objective -11887.00000
+Variable types: 0 continuous, 615 integer (615 binary)
+
+Root relaxation: objective -1.482203e+04, 569 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -14822.031    0   35 -11887.000 -14822.031  24.7%     -    0s
+H    0     0                    -13873.00000 -14822.031  6.84%     -    0s
+H    0     0                    -14587.00000 -14822.031  1.61%     -    0s
+     0     0 -14822.031    0   47 -14587.000 -14822.031  1.61%     -    0s
+H    0     0                    -14700.00000 -14822.031  0.83%     -    0s
+H    0     0                    -14822.00000 -14822.031  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 9
+  Cover: 7
+  Clique: 3
+  MIR: 11
+  StrongCG: 5
+  Zero half: 1
+
+Explored 1 nodes (713 simplex iterations) in 0.06 seconds (0.03 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 6: -14822 -14700 -14587 ... 0
+No other solutions better than -14822
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.482199999996e+04, best bound -1.482199999996e+04, gap 0.0000%

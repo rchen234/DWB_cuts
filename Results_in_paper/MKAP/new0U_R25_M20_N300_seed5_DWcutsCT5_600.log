@@ -1,0 +1,46 @@
+
+Gurobi 9.5.0 (linux64) logging started Fri Apr 29 23:30:27 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new0U_R25_M20_N300_seed5_DWcutsCT5_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 15281 rows, 6500 columns and 191102 nonzeros
+Model fingerprint: 0x3460ec12
+Variable types: 0 continuous, 6500 integer (6500 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 3e+04]
+  Objective range  [1e+00, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-16, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 1769 rows and 171 columns
+Presolve time: 0.54s
+Presolved: 13512 rows, 6329 columns, 130734 nonzeros
+Found heuristic solution: objective -6775.000000
+Variable types: 0 continuous, 6329 integer (6329 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   19506   -1.1288994e+05   5.751015e+04   0.000000e+00      5s
+   22636   -1.1026300e+05   0.000000e+00   0.000000e+00      6s
+
+Root relaxation: objective -1.102630e+05, 22636 iterations, 5.77 seconds (8.80 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0    -110263.0000 -110263.00  0.00%     -    6s
+
+Explored 1 nodes (22636 simplex iterations) in 6.38 seconds (9.43 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 3: -110263 -6775 0 
+No other solutions better than -110263
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (1.4534e-06) exceeds tolerance
+Best objective -1.102629999983e+05, best bound -1.102629999983e+05, gap 0.0000%

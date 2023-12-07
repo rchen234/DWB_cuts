@@ -1,0 +1,47 @@
+
+Gurobi 9.5.0 (linux64) logging started Mon Apr 11 21:20:06 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/probT1_10e3_1W_R50_T002_M020_N0040_seed09_DWcutsT3_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 407 rows, 840 columns and 7579 nonzeros
+Model fingerprint: 0xf652df8a
+Variable types: 0 continuous, 840 integer (840 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 2e+03]
+  Objective range  [2e+02, 9e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-10, 5e+02]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 199 rows and 458 columns
+Presolve time: 0.02s
+Presolved: 208 rows, 382 columns, 3165 nonzeros
+Found heuristic solution: objective -9794.000000
+Variable types: 0 continuous, 382 integer (382 binary)
+
+Root relaxation: objective -1.186100e+04, 318 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -11861.002    0   15 -9794.0000 -11861.002  21.1%     -    0s
+H    0     0                    -11779.00000 -11861.002  0.70%     -    0s
+H    0     0                    -11806.00000 -11861.002  0.47%     -    0s
+H    0     0                    -11861.00000 -11861.002  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 2
+  Cover: 2
+  MIR: 1
+
+Explored 1 nodes (342 simplex iterations) in 0.04 seconds (0.03 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 5: -11861 -11806 -11779 ... 0
+No other solutions better than -11861
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.186100000000e+04, best bound -1.186100000000e+04, gap 0.0000%

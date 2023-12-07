@@ -1,0 +1,48 @@
+
+Gurobi 9.5.0 (linux64) logging started Fri Apr 15 16:34:22 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new1W_R20_M20_N100_seed1_DWcutsT1_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 1320 rows, 2400 columns and 9373 nonzeros
+Model fingerprint: 0x25977c8c
+Variable types: 0 continuous, 2400 integer (2400 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 4e+03]
+  Objective range  [8e+01, 9e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [7e-12, 2e+02]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 353 rows and 586 columns
+Presolve time: 0.03s
+Presolved: 967 rows, 1814 columns, 6160 nonzeros
+Found heuristic solution: objective -8087.000000
+Variable types: 0 continuous, 1814 integer (1814 binary)
+
+Root relaxation: objective -2.852200e+04, 3210 iterations, 0.07 seconds (0.06 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -28522.004    0   19 -8087.0000 -28522.004   253%     -    0s
+H    0     0                    -28156.00000 -28522.004  1.30%     -    0s
+     0     0 -28522.004    0   53 -28156.000 -28522.004  1.30%     -    0s
+H    0     0                    -28522.00000 -28522.004  0.00%     -    0s
+     0     0 -28522.002    0   46 -28522.000 -28522.002  0.00%     -    0s
+
+Cutting planes:
+  Cover: 1
+  MIR: 1
+  StrongCG: 2
+
+Explored 1 nodes (3273 simplex iterations) in 0.16 seconds (0.11 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 4: -28522 -28156 -8087 0 
+No other solutions better than -28522
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -2.852200000000e+04, best bound -2.852200000000e+04, gap 0.0000%

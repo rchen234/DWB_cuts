@@ -1,0 +1,80 @@
+
+Gurobi 9.5.0 (linux64) logging started Sat Jun 18 15:40:18 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new0U_R10_M10_N100_seed1_DWcutsCTp_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 310 rows, 1100 columns and 3291 nonzeros
+Model fingerprint: 0xcbdb8ffe
+Variable types: 0 continuous, 1100 integer (1100 binary)
+Coefficient statistics:
+  Matrix range     [1e-03, 5e+03]
+  Objective range  [6e+00, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-05, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve removed 22 rows and 119 columns
+Presolve time: 0.01s
+Presolved: 288 rows, 981 columns, 2943 nonzeros
+Found heuristic solution: objective -5587.000000
+Variable types: 0 continuous, 981 integer (981 binary)
+
+Root relaxation: objective -4.214481e+04, 1330 iterations, 0.02 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -42144.810    0   88 -5587.0000 -42144.810   654%     -    0s
+H    0     0                    -31821.00000 -42144.810  32.4%     -    0s
+H    0     0                    -37468.00000 -42144.810  12.5%     -    0s
+H    0     0                    -37524.00000 -42144.810  12.3%     -    0s
+     0     0 -42144.810    0  108 -37524.000 -42144.810  12.3%     -    0s
+H    0     0                    -41416.00000 -42144.810  1.76%     -    0s
+     0     0 -42144.810    0   91 -41416.000 -42144.810  1.76%     -    0s
+H    0     0                    -41497.00000 -42144.810  1.56%     -    0s
+     0     0 -42144.810    0   95 -41497.000 -42144.810  1.56%     -    0s
+     0     0 -42144.810    0   95 -41497.000 -42144.810  1.56%     -    0s
+     0     0 -42144.810    0   84 -41497.000 -42144.810  1.56%     -    0s
+H    0     0                    -41520.00000 -42144.810  1.50%     -    0s
+     0     0 -42144.810    0   95 -41520.000 -42144.810  1.50%     -    0s
+     0     0 -42144.810    0   93 -41520.000 -42144.810  1.50%     -    0s
+H    0     0                    -41754.00000 -42144.810  0.94%     -    0s
+     0     0 -42144.810    0  123 -41754.000 -42144.810  0.94%     -    0s
+     0     0 -42144.810    0   95 -41754.000 -42144.810  0.94%     -    0s
+H    0     0                    -41909.00007 -42144.810  0.56%     -    0s
+     0     0 -42144.810    0   54 -41909.000 -42144.810  0.56%     -    0s
+     0     0 -42144.810    0   71 -41909.000 -42144.810  0.56%     -    0s
+     0     0 -42144.810    0  114 -41909.000 -42144.810  0.56%     -    0s
+     0     0 -42144.810    0   85 -41909.000 -42144.810  0.56%     -    0s
+     0     0 -42144.810    0   34 -41909.000 -42144.810  0.56%     -    0s
+     0     0 -42144.810    0   72 -41909.000 -42144.810  0.56%     -    0s
+H    0     0                    -41922.00008 -42144.810  0.53%     -    0s
+     0     0 -42144.810    0   79 -41922.000 -42144.810  0.53%     -    0s
+     0     0 -42144.810    0   79 -41922.000 -42144.810  0.53%     -    0s
+     0     0 -42144.810    0   60 -41922.000 -42144.810  0.53%     -    0s
+     0     0 -42144.810    0  117 -41922.000 -42144.810  0.53%     -    0s
+     0     0 -42144.810    0   64 -41922.000 -42144.810  0.53%     -    0s
+H    0     0                    -42101.00008 -42144.810  0.10%     -    0s
+     0     0 -42144.810    0   54 -42101.000 -42144.810  0.10%     -    0s
+     0     0 -42144.810    0    1 -42101.000 -42144.810  0.10%     -    0s
+     0     0 -42144.810    0   42 -42101.000 -42144.810  0.10%     -    0s
+     0     0 -42144.810    0   43 -42101.000 -42144.810  0.10%     -    0s
+     0     0 -42144.810    0   15 -42101.000 -42144.810  0.10%     -    0s
+     0     0 -42144.810    0   37 -42101.000 -42144.810  0.10%     -    0s
+
+Cutting planes:
+  Gomory: 7
+  Cover: 8
+  Clique: 57
+  MIR: 1
+  StrongCG: 3
+
+Explored 1 nodes (11629 simplex iterations) in 0.60 seconds (0.38 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 10: -42101 -41922 -41909 ... -37524
+No other solutions better than -42101
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (1.9378e-06) exceeds tolerance
+Best objective -4.210100007584e+04, best bound -4.210100007584e+04, gap 0.0000%

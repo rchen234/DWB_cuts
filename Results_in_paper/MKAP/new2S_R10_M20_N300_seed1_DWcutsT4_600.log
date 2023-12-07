@@ -1,0 +1,59 @@
+
+Gurobi 9.5.0 (linux64) logging started Sat Apr 16 03:41:46 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new2S_R10_M20_N300_seed1_DWcutsT4_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 3715 rows, 6200 columns and 110222 nonzeros
+Model fingerprint: 0x8db00cda
+Variable types: 0 continuous, 6200 integer (6200 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 1e+04]
+  Objective range  [5e+01, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-07, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 295 rows and 603 columns
+Presolve time: 0.31s
+Presolved: 3420 rows, 5597 columns, 99151 nonzeros
+Variable types: 0 continuous, 5597 integer (5597 binary)
+Found heuristic solution: objective -19786.00000
+Warning: 1 variables dropped from basis
+Warning: switch to quad precision
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   21724   -1.0304923e+05   2.069420e+04   0.000000e+00      5s
+   35489   -1.0304924e+05   2.383974e+03   0.000000e+00     10s
+   47721   -1.0304924e+05   3.238696e+04   0.000000e+00     15s
+   61630   -1.0304920e+05   1.361337e+04   0.000000e+00     20s
+
+Root relaxation: numerical trouble, 120178 iterations, 41.09 seconds (36.38 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  postponed    0      -19786.000 -3329298.0      -     -   41s
+     0     0  postponed    0      -19786.000 -3329298.0      -     -   82s
+     0     2  postponed    0      -19786.000 -3329298.0      -     -  170s
+     1     4  postponed    1      -19786.000 -3329298.0      - 220329  204s
+     3     8  postponed    2      -19786.000 -3329298.0      - 106876  237s
+     7    12  postponed    3      -19786.000 -3329298.0      - 78672  264s
+    12    13 -3329298.0    3    0 -19786.000 -3329298.0      - 54981  329s
+    14    14 -3329298.0    4    0 -19786.000 -3329298.0      - 47127  363s
+    15    15 -3329298.0    3    0 -19786.000 -3329298.0      - 43985  398s
+    17    19  postponed   16      -19786.000 -103048.75   421% 63515  493s
+    19    23  postponed   17      -19786.000 -103048.75   421% 68505  567s
+    23    22  postponed   18      -19786.000 -103048.75   421% 76955  600s
+
+Explored 24 nodes (2010326 simplex iterations) in 600.00 seconds (794.74 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 2: -19786 0 
+
+Time limit reached
+Best objective -1.978600000000e+04, best bound -1.030480000000e+05, gap 420.8127%

@@ -1,0 +1,43 @@
+
+Gurobi 9.5.0 (linux64) logging started Sat Jun 18 17:47:44 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new2S_R25_M10_N100_seed2_DWcutsCTp1_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 837 rows, 1250 columns and 4743 nonzeros
+Model fingerprint: 0x91002008
+Variable types: 0 continuous, 1250 integer (1250 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 5e+03]
+  Objective range  [7e+01, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-05, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 44 rows and 98 columns
+Presolve time: 0.01s
+Presolved: 793 rows, 1152 columns, 4086 nonzeros
+Variable types: 0 continuous, 1152 integer (1152 binary)
+Found heuristic solution: objective -3195.000000
+
+Root relaxation: objective -2.872000e+04, 1557 iterations, 0.02 seconds (0.02 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -28720.001    0   25 -3195.0000 -28720.001   799%     -    0s
+H    0     0                    -24836.00000 -28720.001  15.6%     -    0s
+H    0     0                    -25101.00000 -28720.001  14.4%     -    0s
+H    0     0                    -28720.00000 -28720.001  0.00%     -    0s
+     0     0 -28720.001    0   25 -28720.000 -28720.001  0.00%     -    0s
+
+Explored 1 nodes (1607 simplex iterations) in 0.04 seconds (0.03 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 5: -28720 -25101 -24836 ... 0
+No other solutions better than -28720
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -2.872000000000e+04, best bound -2.872000000000e+04, gap 0.0000%

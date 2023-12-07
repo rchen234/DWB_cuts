@@ -1,0 +1,48 @@
+
+Gurobi 9.5.0 (linux64) logging started Sun Apr 10 17:23:14 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/probT1_10e3_1W_R50_T002_M010_N0020_seed08_original_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 50 rows, 220 columns and 440 nonzeros
+Model fingerprint: 0xe75d9115
+Variable types: 0 continuous, 220 integer (220 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [4e+01, 9e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve removed 18 rows and 109 columns
+Presolve time: 0.00s
+Presolved: 32 rows, 111 columns, 220 nonzeros
+Variable types: 0 continuous, 111 integer (111 binary)
+Found heuristic solution: objective -3924.000000
+
+Root relaxation: objective -5.442361e+03, 66 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -5442.3614    0   18 -3924.0000 -5442.3614  38.7%     -    0s
+H    0     0                    -5149.000000 -5442.3614  5.70%     -    0s
+     0     0 -5260.0244    0   18 -5149.0000 -5260.0244  2.16%     -    0s
+H    0     0                    -5160.000000 -5260.0244  1.94%     -    0s
+     0     0 -5226.3341    0   12 -5160.0000 -5226.3341  1.29%     -    0s
+     0     0 -5222.5865    0   16 -5160.0000 -5222.5865  1.21%     -    0s
+
+Cutting planes:
+  Gomory: 6
+  Cover: 13
+  Clique: 4
+  MIR: 6
+  StrongCG: 5
+
+Explored 1 nodes (139 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 4: -5160 -5149 -3924 0 
+No other solutions better than -5160
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -5.160000000000e+03, best bound -5.160000000000e+03, gap 0.0000%

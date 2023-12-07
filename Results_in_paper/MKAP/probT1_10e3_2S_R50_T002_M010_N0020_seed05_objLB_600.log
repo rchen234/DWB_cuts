@@ -1,0 +1,45 @@
+
+Gurobi 9.5.0 (linux64) logging started Sun Apr 10 17:22:39 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/probT1_10e3_2S_R50_T002_M010_N0020_seed05_objLB_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 51 rows, 220 columns and 640 nonzeros
+Model fingerprint: 0x412e3152
+Variable types: 0 continuous, 220 integer (220 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [2e+02, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 7e+03]
+Found heuristic solution: objective 0.0000000
+Presolve removed 18 rows and 109 columns
+Presolve time: 0.00s
+Presolved: 33 rows, 111 columns, 322 nonzeros
+Variable types: 0 continuous, 111 integer (111 binary)
+Found heuristic solution: objective -6365.000000
+
+Root relaxation: objective -7.158000e+03, 40 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -7158.0000    0    8 -6365.0000 -7158.0000  12.5%     -    0s
+H    0     0                    -6395.000000 -7158.0000  11.9%     -    0s
+H    0     0                    -7158.000000 -7158.0000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 4
+  Clique: 9
+  MIR: 2
+  StrongCG: 2
+
+Explored 1 nodes (40 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 4: -7158 -6395 -6365 0 
+No other solutions better than -7158
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -7.158000000000e+03, best bound -7.158000000000e+03, gap 0.0000%

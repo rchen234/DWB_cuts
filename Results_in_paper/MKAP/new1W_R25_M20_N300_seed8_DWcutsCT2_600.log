@@ -1,0 +1,43 @@
+
+Gurobi 9.5.0 (linux64) logging started Fri Apr 29 23:13:06 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new1W_R25_M20_N300_seed8_DWcutsCT2_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 2703 rows, 6500 columns and 36606 nonzeros
+Model fingerprint: 0x1744ca67
+Variable types: 0 continuous, 6500 integer (6500 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 8e+03]
+  Objective range  [2e+01, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [4e-16, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 86 rows and 625 columns
+Presolve time: 0.08s
+Presolved: 2617 rows, 5875 columns, 33000 nonzeros
+Found heuristic solution: objective -7227.000000
+Variable types: 0 continuous, 5875 integer (5875 binary)
+
+Root relaxation: objective -8.801300e+04, 20497 iterations, 1.80 seconds (1.96 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -88013.000    0  349 -7227.0000 -88013.000  1118%     -    1s
+H    0     0                    -78150.00000 -88013.000  12.6%     -    2s
+H    0     0                    -82973.00023 -88013.000  6.07%     -    2s
+H    0     0                    -88013.00014 -88013.000  0.00%     -    2s
+     0     0 -88013.000    0  349 -88013.000 -88013.000  0.00%     -    2s
+
+Explored 1 nodes (20814 simplex iterations) in 2.06 seconds (2.18 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 5: -88013 -82973 -78150 ... 0
+No other solutions better than -88013
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -8.801300014414e+04, best bound -8.801300014414e+04, gap 0.0000%

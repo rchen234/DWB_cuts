@@ -1,0 +1,50 @@
+
+Gurobi 9.5.0 (linux64) logging started Fri Apr 29 22:30:06 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new1W_R25_M10_N300_seed10_DWcutsCT_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 810 rows, 3250 columns and 9750 nonzeros
+Model fingerprint: 0x48798079
+Variable types: 0 continuous, 3250 integer (3250 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+04]
+  Objective range  [8e+01, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-12, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve time: 0.01s
+Presolved: 810 rows, 3250 columns, 9750 nonzeros
+Variable types: 0 continuous, 3250 integer (3250 binary)
+Found heuristic solution: objective -5025.000000
+
+Root relaxation: objective -6.518801e+04, 2710 iterations, 0.04 seconds (0.04 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -65188.013    0  148 -5025.0000 -65188.013  1197%     -    0s
+H    0     0                    -51036.00000 -65188.013  27.7%     -    0s
+H    0     0                    -52784.00000 -65188.013  23.5%     -    0s
+H    0     0                    -59387.00000 -65188.013  9.77%     -    0s
+H    0     0                    -63607.00000 -65188.013  2.49%     -    0s
+     0     0 -65188.013    0  264 -63607.000 -65188.013  2.49%     -    0s
+     0     0 -65188.013    0  241 -63607.000 -65188.013  2.49%     -    0s
+H    0     0                    -65188.00000 -65188.013  0.00%     -    0s
+     0     0 -65188.000    0  226 -65188.000 -65188.000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 28
+  Cover: 112
+  Clique: 714
+  MIR: 7
+  StrongCG: 18
+
+Explored 1 nodes (4612 simplex iterations) in 0.32 seconds (0.23 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 7: -65188 -63607 -59387 ... 0
+No other solutions better than -65188
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -6.518800000000e+04, best bound -6.518800000000e+04, gap 0.0000%

@@ -1,0 +1,50 @@
+
+Gurobi 9.5.0 (linux64) logging started Fri Apr 29 22:29:48 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new1W_R25_M10_N300_seed4_DWcutsCT2_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 1558 rows, 3250 columns and 19140 nonzeros
+Model fingerprint: 0xa8b0f11e
+Variable types: 0 continuous, 3250 integer (3250 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 2e+04]
+  Objective range  [3e+01, 9e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-13, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 6 rows and 0 columns
+Presolve time: 0.03s
+Presolved: 1552 rows, 3250 columns, 17911 nonzeros
+Variable types: 0 continuous, 3250 integer (3250 binary)
+Found heuristic solution: objective -5615.000000
+
+Root relaxation: objective -5.927400e+04, 8022 iterations, 0.35 seconds (0.36 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -59274.000    0  166 -5615.0000 -59274.000   956%     -    0s
+H    0     0                    -38743.00000 -59274.000  53.0%     -    0s
+H    0     0                    -58886.00000 -59274.000  0.66%     -    0s
+H    0     0                    -59274.00000 -59274.000  0.00%     -    0s
+     0     0 -59274.000    0  260 -59274.000 -59274.000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 9
+  Cover: 20
+  Clique: 778
+  MIR: 12
+  StrongCG: 15
+
+Explored 1 nodes (8617 simplex iterations) in 0.58 seconds (0.55 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 5: -59274 -58886 -38743 ... 0
+No other solutions better than -59274
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -5.927400000000e+04, best bound -5.927400000000e+04, gap 0.0000%

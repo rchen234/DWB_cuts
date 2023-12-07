@@ -1,0 +1,80 @@
+
+Gurobi 9.5.0 (linux64) logging started Tue May  3 14:00:06 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new0U_R10_M40_N100_seed8_DWcutsCT3_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 2133 rows, 4400 columns and 22788 nonzeros
+Model fingerprint: 0x3ad51af9
+Variable types: 0 continuous, 4400 integer (4400 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 3e+03]
+  Objective range  [2e+01, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-16, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 665 rows and 1759 columns
+Presolve time: 0.07s
+Presolved: 1468 rows, 2641 columns, 13068 nonzeros
+Found heuristic solution: objective -13999.00000
+Variable types: 0 continuous, 2641 integer (2641 binary)
+
+Root relaxation: objective -3.768422e+04, 4060 iterations, 0.12 seconds (0.11 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -37684.216    0  166 -13999.000 -37684.216   169%     -    0s
+H    0     0                    -35366.00000 -37684.216  6.55%     -    0s
+H    0     0                    -36287.00000 -37684.216  3.85%     -    0s
+H    0     0                    -36340.00000 -37684.216  3.70%     -    0s
+     0     0 -37684.216    0  172 -36340.000 -37684.216  3.70%     -    0s
+H    0     0                    -36961.00000 -37684.216  1.96%     -    0s
+H    0     0                    -37202.00000 -37684.216  1.30%     -    0s
+H    0     0                    -37345.00000 -37684.216  0.91%     -    0s
+     0     0 -37683.698    0  165 -37345.000 -37683.698  0.91%     -    0s
+H    0     0                    -37365.00000 -37683.698  0.85%     -    0s
+     0     0 -37678.507    0  188 -37365.000 -37678.507  0.84%     -    0s
+     0     0 -37678.470    0  187 -37365.000 -37678.470  0.84%     -    0s
+     0     0 -37678.470    0  184 -37365.000 -37678.470  0.84%     -    0s
+     0     0 -37678.470    0  181 -37365.000 -37678.470  0.84%     -    0s
+     0     2 -37678.470    0  181 -37365.000 -37678.470  0.84%     -    0s
+H   31    34                    -37431.00000 -37678.312  0.66%   129    1s
+H   63    68                    -37435.00000 -37678.312  0.65%   122    1s
+H   64    68                    -37558.00000 -37678.312  0.32%   121    1s
+H  583   431                    -37562.00000 -37669.360  0.29%  65.8    2s
+  1078   725 -37664.441   15  179 -37562.000 -37664.441  0.27%  67.5    5s
+H 1307   736                    -37576.00004 -37664.441  0.24%  68.9    7s
+H 1975   877                    -37593.00000 -37658.717  0.17%  63.8    8s
+  3244  1296 -37599.969   68   34 -37593.000 -37650.453  0.15%  58.1   10s
+  7530  3147 -37609.000   24   65 -37593.000 -37638.879  0.12%  53.3   15s
+ 11248  4419 -37600.251   50   73 -37593.000 -37634.312  0.11%  51.5   20s
+ 17263  5641 -37608.750   30  129 -37593.000 -37627.473  0.09%  50.6   25s
+ 21055  6353 -37605.844   38  153 -37593.000 -37624.083  0.08%  49.4   32s
+ 24028  6439     cutoff   38      -37593.000 -37621.398  0.08%  49.8   35s
+ 29475  6064     cutoff   35      -37593.000 -37616.608  0.06%  51.2   40s
+ 35233  5020     cutoff   56      -37593.000 -37611.545  0.05%  51.7   45s
+ 41070  2860 -37594.891   35  157 -37593.000 -37606.090  0.03%  51.1   50s
+
+Cutting planes:
+  Gomory: 11
+  Cover: 29
+  Clique: 7
+  MIR: 18
+  StrongCG: 6
+  Flow cover: 25
+  GUB cover: 1
+  Zero half: 25
+  RLT: 4
+
+Explored 47339 nodes (2313345 simplex iterations) in 53.65 seconds (93.54 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 10: -37593 -37576 -37562 ... -36961
+No other solutions better than -37593
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -3.759300000000e+04, best bound -3.759300000000e+04, gap 0.0000%

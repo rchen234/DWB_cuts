@@ -1,0 +1,49 @@
+
+Gurobi 9.5.0 (linux64) logging started Mon Apr 11 17:22:01 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/probT1_10e3_1W_R50_T002_M010_N0020_seed04_objLB_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 51 rows, 220 columns and 640 nonzeros
+Model fingerprint: 0x8b8e2c10
+Variable types: 0 continuous, 220 integer (220 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+02]
+  Objective range  [6e+01, 9e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 6e+03]
+Found heuristic solution: objective 0.0000000
+Presolve removed 17 rows and 107 columns
+Presolve time: 0.00s
+Presolved: 34 rows, 113 columns, 331 nonzeros
+Variable types: 0 continuous, 113 integer (113 binary)
+Found heuristic solution: objective -5016.000000
+
+Root relaxation: objective -6.043000e+03, 56 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -6043.0000    0    6 -5016.0000 -6043.0000  20.5%     -    0s
+H    0     0                    -5321.000000 -6043.0000  13.6%     -    0s
+H    0     0                    -5542.000000 -6043.0000  9.04%     -    0s
+H    0     0                    -5822.000000 -6043.0000  3.80%     -    0s
+     0     0 -6043.0000    0   23 -5822.0000 -6043.0000  3.80%     -    0s
+H    0     0                    -6043.000000 -6043.0000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 11
+  Cover: 11
+  Clique: 4
+  MIR: 8
+  StrongCG: 5
+  RLT: 1
+
+Explored 1 nodes (154 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 6: -6043 -5822 -5542 ... 0
+No other solutions better than -6043
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -6.043000000000e+03, best bound -6.043000000000e+03, gap 0.0000%

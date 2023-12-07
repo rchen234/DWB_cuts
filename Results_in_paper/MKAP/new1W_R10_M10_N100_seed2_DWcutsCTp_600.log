@@ -1,0 +1,45 @@
+
+Gurobi 9.5.0 (linux64) logging started Sat Jun 18 15:41:33 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new1W_R10_M10_N100_seed2_DWcutsCTp_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 310 rows, 1100 columns and 3300 nonzeros
+Model fingerprint: 0x93d5db27
+Variable types: 0 continuous, 1100 integer (1100 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+03]
+  Objective range  [7e+01, 9e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-05, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve removed 0 rows and 120 columns
+Presolve time: 0.01s
+Presolved: 310 rows, 980 columns, 2940 nonzeros
+Variable types: 0 continuous, 980 integer (980 binary)
+Found heuristic solution: objective -4250.000000
+
+Root relaxation: objective -2.852834e+04, 1796 iterations, 0.03 seconds (0.02 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -28528.336    0   95 -4250.0000 -28528.336   571%     -    0s
+H    0     0                    -20253.00000 -28528.336  40.9%     -    0s
+H    0     0                    -22310.00000 -28528.336  27.9%     -    0s
+H    0     0                    -25924.00000 -28528.336  10.0%     -    0s
+H    0     0                    -26707.00000 -28528.336  6.82%     -    0s
+H    0     0                    -27089.00000 -28528.336  5.31%     -    0s
+H    0     0                    -28524.00000 -28528.336  0.02%     -    0s
+     0     0 -28528.335    0   33 -28524.000 -28528.335  0.02%     -    0s
+     0     0 -28528.335    0   48 -28524.000 -28528.335  0.02%     -    0s
+     0     0     cutoff    0      -28524.000 -28524.000  0.00%     -    0s
+
+Explored 1 nodes (2378 simplex iterations) in 0.11 seconds (0.06 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 10: -28524 -28524 -28121 ... 0
+No other solutions better than -28524
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -2.852400000000e+04, best bound -2.852400000000e+04, gap 0.0000%

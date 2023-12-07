@@ -1,0 +1,50 @@
+
+Gurobi 9.5.0 (linux64) logging started Sat Jun 18 18:30:29 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new2S_R25_M10_N300_seed6_DWcutsCTp_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 810 rows, 3250 columns and 9750 nonzeros
+Model fingerprint: 0x90d7a059
+Variable types: 0 continuous, 3250 integer (3250 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+04]
+  Objective range  [8e+00, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-05, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve removed 0 rows and 144 columns
+Presolve time: 0.01s
+Presolved: 810 rows, 3106 columns, 9318 nonzeros
+Variable types: 0 continuous, 3106 integer (3106 binary)
+Found heuristic solution: objective -6702.000000
+
+Root relaxation: objective -6.672800e+04, 2219 iterations, 0.03 seconds (0.04 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -66728.000    0   81 -6702.0000 -66728.000   896%     -    0s
+H    0     0                    -49231.00000 -66728.000  35.5%     -    0s
+H    0     0                    -51120.00000 -66728.000  30.5%     -    0s
+H    0     0                    -58529.00003 -66728.000  14.0%     -    0s
+H    0     0                    -65871.00000 -66728.000  1.30%     -    0s
+H    0     0                    -66728.00007 -66728.000  0.00%     -    0s
+     0     0 -66728.000    0  223 -66728.000 -66728.000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 9
+  Cover: 18
+  Clique: 454
+  MIR: 8
+  StrongCG: 16
+
+Explored 1 nodes (4227 simplex iterations) in 0.16 seconds (0.13 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 7: -66728 -65871 -58529 ... 0
+No other solutions better than -66728
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (6.9303e-06) exceeds tolerance
+Best objective -6.672800007678e+04, best bound -6.672800007678e+04, gap 0.0000%

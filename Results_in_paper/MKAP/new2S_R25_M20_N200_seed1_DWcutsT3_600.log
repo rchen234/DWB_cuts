@@ -1,0 +1,48 @@
+
+Gurobi 9.5.0 (linux64) logging started Fri Apr 15 23:19:47 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new2S_R25_M20_N200_seed1_DWcutsT3_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 4711 rows, 4500 columns and 42721 nonzeros
+Model fingerprint: 0x313877d8
+Variable types: 0 continuous, 4500 integer (4500 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 8e+03]
+  Objective range  [2e+01, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [4e-06, 1e+03]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 617 rows and 330 columns
+Presolve time: 0.18s
+Presolved: 4094 rows, 4170 columns, 31904 nonzeros
+Found heuristic solution: objective -6613.000000
+Variable types: 0 continuous, 4170 integer (4170 binary)
+
+Root relaxation: objective -6.579398e+04, 10151 iterations, 0.97 seconds (0.96 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -65793.975    0  323 -6613.0000 -65793.975   895%     -    1s
+H    0     0                    -61410.00000 -65793.975  7.14%     -    1s
+H    0     0                    -64530.00000 -65793.975  1.96%     -    1s
+H    0     0                    -65682.00000 -65793.975  0.17%     -    1s
+H    0     0                    -65717.00000 -65793.975  0.12%     -    1s
+H    0     0                    -65728.00000 -65785.577  0.09%     -    1s
+     0     0 -65785.577    0   55 -65728.000 -65785.577  0.09%     -    1s
+     0     0 -65759.116    0  152 -65728.000 -65759.116  0.05%     -    1s
+*    0     0               0    -65759.00001 -65759.000  0.00%     -    2s
+
+Explored 1 nodes (16034 simplex iterations) in 2.14 seconds (1.88 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 8: -65759 -65728 -65717 ... 0
+No other solutions better than -65759
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (6.0983e-06) exceeds tolerance
+Best objective -6.575900000456e+04, best bound -6.575900000650e+04, gap 0.0000%

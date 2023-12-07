@@ -1,0 +1,77 @@
+
+Gurobi 9.5.0 (linux64) logging started Sat Jun 18 20:45:08 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new2S_R25_M20_N300_seed10_DWcutsCTp_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 1320 rows, 6500 columns and 19499 nonzeros
+Model fingerprint: 0x24c849a5
+Variable types: 0 continuous, 6500 integer (6500 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+03]
+  Objective range  [2e+01, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-05, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve removed 26 rows and 430 columns
+Presolve time: 0.04s
+Presolved: 1294 rows, 6070 columns, 18178 nonzeros
+Found heuristic solution: objective -8699.000000
+Variable types: 0 continuous, 6070 integer (6070 binary)
+
+Root relaxation: objective -9.645003e+04, 4299 iterations, 0.07 seconds (0.07 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -96450.028    0  240 -8699.0000 -96450.028  1009%     -    0s
+H    0     0                    -75174.00000 -96450.028  28.3%     -    0s
+H    0     0                    -79782.00001 -96450.028  20.9%     -    0s
+H    0     0                    -86995.00000 -96450.028  10.9%     -    0s
+H    0     0                    -92585.00000 -96450.028  4.17%     -    0s
+     0     0 -96450.028    0  349 -92585.000 -96450.028  4.17%     -    0s
+H    0     0                    -92957.00000 -96450.028  3.76%     -    0s
+H    0     0                    -93682.00000 -96450.028  2.95%     -    0s
+     0     0 -96450.028    0  257 -93682.000 -96450.028  2.95%     -    0s
+H    0     0                    -95260.00000 -96450.028  1.25%     -    0s
+     0     0 -96450.028    0  239 -95260.000 -96450.028  1.25%     -    0s
+H    0     0                    -95293.00000 -96450.028  1.21%     -    0s
+     0     0 -96450.028    0  216 -95293.000 -96450.028  1.21%     -    0s
+H    0     0                    -95852.00000 -96450.028  0.62%     -    1s
+     0     0 -96450.028    0  210 -95852.000 -96450.028  0.62%     -    1s
+     0     0 -96450.028    0  281 -95852.000 -96450.028  0.62%     -    1s
+H    0     0                    -95855.00000 -96450.028  0.62%     -    1s
+     0     0 -96450.028    0  263 -95855.000 -96450.028  0.62%     -    1s
+     0     0 -96450.028    0  263 -95855.000 -96450.028  0.62%     -    1s
+     0     0 -96450.028    0  114 -95855.000 -96450.028  0.62%     -    1s
+     0     0 -96450.028    0  188 -95855.000 -96450.028  0.62%     -    2s
+     0     0 -96450.028    0  178 -95855.000 -96450.028  0.62%     -    2s
+     0     0 -96450.028    0  244 -95855.000 -96450.028  0.62%     -    2s
+     0     0 -96450.028    0  244 -95855.000 -96450.028  0.62%     -    2s
+     0     2 -96450.028    0  244 -95855.000 -96450.028  0.62%     -    2s
+H   61    66                    -95891.00004 -96450.028  0.58%  76.4    3s
+H   95   100                    -96030.00000 -96450.028  0.44%  79.0    3s
+H  109   116                    -96052.00007 -96450.028  0.41%  80.7    3s
+H  161   181                    -96189.00004 -96450.028  0.27%  81.0    4s
+H  370   315                    -96248.00006 -96450.028  0.21%  65.9    5s
+H  394   255                    -96414.00000 -96450.028  0.04%  66.8    5s
+H 1624   226                    -96450.00000 -96450.028  0.00%   119    8s
+
+Cutting planes:
+  Gomory: 34
+  Lift-and-project: 2
+  Cover: 487
+  Clique: 369
+  MIR: 40
+  StrongCG: 38
+  GUB cover: 1
+  RLT: 2
+
+Explored 1690 nodes (238227 simplex iterations) in 8.38 seconds (10.62 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 10: -96450 -96414 -96248 ... -95293
+No other solutions better than -96450
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -9.645000000000e+04, best bound -9.645000000000e+04, gap 0.0000%

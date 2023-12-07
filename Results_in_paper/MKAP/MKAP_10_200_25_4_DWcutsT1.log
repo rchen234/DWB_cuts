@@ -1,0 +1,52 @@
+
+Gurobi 9.5.0 (linux64) logging started Fri Apr  1 03:37:15 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/MKAP_10_200_25_4_DWcutsT1.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 960 rows, 2250 columns and 9000 nonzeros
+Model fingerprint: 0x77d7ec16
+Variable types: 0 continuous, 2250 integer (2250 binary)
+Coefficient statistics:
+  Matrix range     [4e-01, 6e+03]
+  Objective range  [1e+01, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve time: 0.03s
+Presolved: 960 rows, 2250 columns, 8629 nonzeros
+Variable types: 0 continuous, 2250 integer (2250 binary)
+Found heuristic solution: objective -4114.000000
+
+Root relaxation: objective -4.422701e+04, 3498 iterations, 0.07 seconds (0.06 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -44227.006    0  103 -4114.0000 -44227.006   975%     -    0s
+H    0     0                    -35491.00000 -44227.006  24.6%     -    0s
+H    0     0                    -39159.00000 -44227.006  12.9%     -    0s
+H    0     0                    -39461.00000 -44227.006  12.1%     -    0s
+H    0     0                    -43316.00000 -44227.006  2.10%     -    0s
+     0     0 -44227.006    0  180 -43316.000 -44227.006  2.10%     -    0s
+H    0     0                    -43420.00000 -44227.006  1.86%     -    0s
+     0     0 -44227.006    0  162 -43420.000 -44227.006  1.86%     -    0s
+H    0     0                    -44227.00000 -44227.006  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 37
+  Lift-and-project: 4
+  Cover: 65
+  Clique: 322
+  MIR: 12
+  StrongCG: 15
+  RLT: 2
+
+Explored 1 nodes (4365 simplex iterations) in 0.28 seconds (0.19 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 8: -44227 -43420 -43316 ... 0
+No other solutions better than -44227
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -4.422700000000e+04, best bound -4.422700000000e+04, gap 0.0000%

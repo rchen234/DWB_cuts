@@ -1,0 +1,48 @@
+
+Gurobi 9.5.0 (linux64) logging started Sat Jun 18 17:47:32 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new2S_R25_M10_N100_seed1_DWcutsCTp1_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 851 rows, 1250 columns and 4731 nonzeros
+Model fingerprint: 0xc2df35be
+Variable types: 0 continuous, 1250 integer (1250 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 4e+03]
+  Objective range  [3e+01, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-05, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 35 rows and 75 columns
+Presolve time: 0.01s
+Presolved: 816 rows, 1175 columns, 4103 nonzeros
+Found heuristic solution: objective -4012.000000
+Variable types: 0 continuous, 1175 integer (1175 binary)
+
+Root relaxation: objective -2.327000e+04, 1868 iterations, 0.02 seconds (0.02 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -23270.003    0   54 -4012.0000 -23270.003   480%     -    0s
+H    0     0                    -20587.00000 -23270.003  13.0%     -    0s
+H    0     0                    -22734.00000 -23270.003  2.36%     -    0s
+H    0     0                    -23270.00000 -23270.003  0.00%     -    0s
+
+Cutting planes:
+  Cover: 14
+  Clique: 67
+  MIR: 1
+  StrongCG: 1
+
+Explored 1 nodes (1878 simplex iterations) in 0.06 seconds (0.04 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 5: -23270 -22734 -20587 ... 0
+No other solutions better than -23270
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -2.327000000000e+04, best bound -2.327000000000e+04, gap 0.0000%

@@ -1,0 +1,43 @@
+
+Gurobi 9.5.0 (linux64) logging started Mon Jun 20 09:24:38 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new0U_R10_M10_N50_seed5_DWcutsCTp2_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 447 rows, 600 columns and 2519 nonzeros
+Model fingerprint: 0x33b686da
+Variable types: 0 continuous, 600 integer (600 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 3e+03]
+  Objective range  [4e+00, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-05, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 68 rows and 134 columns
+Presolve time: 0.01s
+Presolved: 379 rows, 466 columns, 1765 nonzeros
+Found heuristic solution: objective -5512.000000
+Variable types: 0 continuous, 466 integer (466 binary)
+
+Root relaxation: objective -2.034202e+04, 1028 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -20342.016    0   69 -5512.0000 -20342.016   269%     -    0s
+H    0     0                    -20068.00000 -20342.016  1.37%     -    0s
+H    0     0                    -20256.00000 -20342.016  0.42%     -    0s
+     0     0 -20321.001    0   20 -20256.000 -20321.001  0.32%     -    0s
+*    0     0               0    -20321.00001 -20321.000  0.00%     -    0s
+
+Explored 1 nodes (1129 simplex iterations) in 0.05 seconds (0.03 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 5: -20321 -20256 -20068 ... 0
+No other solutions better than -20321
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -2.032100002730e+04, best bound -2.032100002730e+04, gap 0.0000%

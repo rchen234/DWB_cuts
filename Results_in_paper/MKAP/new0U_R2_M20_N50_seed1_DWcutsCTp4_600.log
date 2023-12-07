@@ -1,0 +1,50 @@
+
+Gurobi 9.5.0 (linux64) logging started Mon Jun 20 08:45:40 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new0U_R2_M20_N50_seed1_DWcutsCTp4_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 506 rows, 1040 columns and 10094 nonzeros
+Model fingerprint: 0x259f2f4a
+Variable types: 0 continuous, 1040 integer (1040 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 2e+03]
+  Objective range  [1e+01, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-05, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 175 rows and 417 columns
+Presolve time: 0.03s
+Presolved: 331 rows, 623 columns, 5201 nonzeros
+Variable types: 0 continuous, 623 integer (623 binary)
+Found heuristic solution: objective -21071.00000
+
+Root relaxation: objective -2.332602e+04, 894 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -23326.019    0   68 -21071.000 -23326.019  10.7%     -    0s
+H    0     0                    -22784.00000 -23326.019  2.38%     -    0s
+H    0     0                    -22966.00000 -23326.019  1.57%     -    0s
+H    0     0                    -23326.00000 -23326.019  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 4
+  Clique: 3
+  MIR: 3
+  StrongCG: 1
+  Zero half: 2
+  RLT: 1
+
+Explored 1 nodes (919 simplex iterations) in 0.06 seconds (0.06 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 5: -23326 -22966 -22784 ... 0
+No other solutions better than -23326
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -2.332600000000e+04, best bound -2.332600000000e+04, gap 0.0000%

@@ -1,0 +1,44 @@
+
+Gurobi 9.5.0 (linux64) logging started Tue May  3 14:02:44 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new2S_R25_M30_N100_seed2_DWcutsCT5_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 2725 rows, 3750 columns and 14263 nonzeros
+Model fingerprint: 0x81b2aa09
+Variable types: 0 continuous, 3750 integer (3750 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 3e+03]
+  Objective range  [1e+02, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e-14, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 1284 rows and 1304 columns
+Presolve time: 0.04s
+Presolved: 1441 rows, 2446 columns, 6921 nonzeros
+Found heuristic solution: objective -17654.00000
+Variable types: 0 continuous, 2446 integer (2446 binary)
+
+Root relaxation: objective -3.315900e+04, 2911 iterations, 0.04 seconds (0.03 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -33159.000    0   27 -17654.000 -33159.000  87.8%     -    0s
+H    0     0                    -32690.00000 -33159.000  1.43%     -    0s
+H    0     0                    -33047.00000 -33159.000  0.34%     -    0s
+H    0     0                    -33058.00000 -33159.000  0.31%     -    0s
+     0     0 -33159.000    0   33 -33058.000 -33159.000  0.31%     -    0s
+     0     0     cutoff    0      -33058.000 -33058.000  0.00%     -    0s
+
+Explored 1 nodes (3321 simplex iterations) in 0.16 seconds (0.11 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 5: -33058 -33047 -32690 ... 0
+No other solutions better than -33058
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -3.305800000076e+04, best bound -3.305800000076e+04, gap 0.0000%

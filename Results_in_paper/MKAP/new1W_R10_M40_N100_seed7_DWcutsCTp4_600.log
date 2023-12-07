@@ -1,0 +1,75 @@
+
+Gurobi 9.5.0 (linux64) logging started Mon Jun 20 10:20:45 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new1W_R10_M40_N100_seed7_DWcutsCTp4_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 2616 rows, 4400 columns and 26362 nonzeros
+Model fingerprint: 0xfc5ac626
+Variable types: 0 continuous, 4400 integer (4400 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 2e+03]
+  Objective range  [2e+01, 9e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-05, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 986 rows and 1615 columns
+Presolve time: 0.05s
+Presolved: 1630 rows, 2785 columns, 14078 nonzeros
+Found heuristic solution: objective -14340.00000
+Variable types: 0 continuous, 2785 integer (2785 binary)
+
+Root relaxation: objective -3.133976e+04, 3983 iterations, 0.10 seconds (0.10 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -31339.763    0  424 -14340.000 -31339.763   119%     -    0s
+H    0     0                    -30194.00000 -31339.763  3.79%     -    0s
+H    0     0                    -30970.00000 -31339.763  1.19%     -    0s
+H    0     0                    -30979.00000 -31339.763  1.16%     -    0s
+H    0     0                    -31227.00003 -31339.763  0.36%     -    0s
+     0     0 -31332.709    0  433 -31227.000 -31332.709  0.34%     -    0s
+     0     0 -31332.709    0  405 -31227.000 -31332.709  0.34%     -    0s
+     0     0 -31332.142    0  394 -31227.000 -31332.142  0.34%     -    0s
+     0     0 -31331.429    0  398 -31227.000 -31331.429  0.33%     -    0s
+     0     0 -31330.912    0  401 -31227.000 -31330.912  0.33%     -    0s
+     0     0 -31330.911    0  405 -31227.000 -31330.911  0.33%     -    0s
+     0     0 -31330.910    0  401 -31227.000 -31330.910  0.33%     -    0s
+     0     0 -31330.909    0  400 -31227.000 -31330.909  0.33%     -    0s
+     0     0 -31330.909    0  400 -31227.000 -31330.909  0.33%     -    0s
+H    0     0                    -31276.00007 -31330.909  0.18%     -    0s
+     0     0 -31330.661    0  358 -31276.000 -31330.661  0.17%     -    1s
+     0     0 -31328.797    0  350 -31276.000 -31328.797  0.17%     -    1s
+     0     0 -31328.708    0  357 -31276.000 -31328.708  0.17%     -    1s
+     0     0 -31328.064    0  359 -31276.000 -31328.064  0.17%     -    1s
+     0     0 -31328.037    0  366 -31276.000 -31328.037  0.17%     -    1s
+     0     0 -31327.987    0  369 -31276.000 -31327.987  0.17%     -    1s
+     0     0 -31326.230    0  369 -31276.000 -31326.230  0.16%     -    1s
+     0     0 -31326.187    0  364 -31276.000 -31326.187  0.16%     -    1s
+     0     0 -31325.945    0  377 -31276.000 -31325.945  0.16%     -    1s
+     0     0 -31325.904    0  384 -31276.000 -31325.904  0.16%     -    1s
+     0     0 -31325.777    0  380 -31276.000 -31325.777  0.16%     -    1s
+     0     0 -31325.773    0  381 -31276.000 -31325.773  0.16%     -    1s
+     0     0 -31325.766    0  378 -31276.000 -31325.766  0.16%     -    1s
+     0     0 -31325.762    0  379 -31276.000 -31325.762  0.16%     -    1s
+     0     0 -31325.762    0  379 -31276.000 -31325.762  0.16%     -    1s
+     0     2 -31323.466    0  379 -31276.000 -31323.466  0.15%     -    1s
+
+Cutting planes:
+  Gomory: 4
+  Cover: 36
+  Clique: 4
+  MIR: 4
+  StrongCG: 2
+
+Explored 2582 nodes (213659 simplex iterations) in 4.25 seconds (5.35 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 7: -31276 -31227 -30979 ... 0
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -3.127600000000e+04, best bound -3.127600000000e+04, gap 0.0000%

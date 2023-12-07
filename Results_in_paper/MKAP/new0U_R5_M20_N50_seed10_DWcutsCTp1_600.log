@@ -1,0 +1,78 @@
+
+Gurobi 9.5.0 (linux64) logging started Mon Jun 20 09:21:33 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new0U_R5_M20_N50_seed10_DWcutsCTp1_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 345 rows, 1100 columns and 3919 nonzeros
+Model fingerprint: 0x7a0e70e7
+Variable types: 0 continuous, 1100 integer (1100 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 1e+03]
+  Objective range  [2e+01, 1e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-05, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 49 rows and 441 columns
+Presolve time: 0.01s
+Presolved: 296 rows, 659 columns, 2421 nonzeros
+Found heuristic solution: objective -6980.000000
+Variable types: 0 continuous, 659 integer (659 binary)
+
+Root relaxation: objective -1.927534e+04, 1192 iterations, 0.02 seconds (0.02 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -19275.341    0  108 -6980.0000 -19275.341   176%     -    0s
+H    0     0                    -18920.00000 -19275.341  1.88%     -    0s
+H    0     0                    -19028.00000 -19275.341  1.30%     -    0s
+H    0     0                    -19068.00000 -19275.341  1.09%     -    0s
+     0     0 -19275.341    0  116 -19068.000 -19275.341  1.09%     -    0s
+     0     0 -19275.341    0   87 -19068.000 -19275.341  1.09%     -    0s
+     0     0 -19275.341    0   94 -19068.000 -19275.341  1.09%     -    0s
+     0     0 -19275.341    0   95 -19068.000 -19275.341  1.09%     -    0s
+     0     0 -19275.341    0   91 -19068.000 -19275.341  1.09%     -    0s
+H    0     0                    -19120.00000 -19275.341  0.81%     -    0s
+     0     0 -19275.341    0   92 -19120.000 -19275.341  0.81%     -    0s
+     0     0 -19275.341    0   92 -19120.000 -19275.341  0.81%     -    0s
+H    0     0                    -19228.00000 -19275.341  0.25%     -    0s
+     0     0 -19275.336    0   83 -19228.000 -19275.336  0.25%     -    0s
+     0     0 -19275.336    0   97 -19228.000 -19275.336  0.25%     -    0s
+     0     0 -19275.336    0  103 -19228.000 -19275.336  0.25%     -    0s
+     0     0 -19275.335    0   60 -19228.000 -19275.335  0.25%     -    0s
+     0     0 -19275.335    0   64 -19228.000 -19275.335  0.25%     -    0s
+     0     0 -19275.335    0   74 -19228.000 -19275.335  0.25%     -    0s
+     0     0 -19275.335    0   76 -19228.000 -19275.335  0.25%     -    0s
+     0     0 -19275.335    0   76 -19228.000 -19275.335  0.25%     -    0s
+     0     0 -19275.335    0   50 -19228.000 -19275.335  0.25%     -    0s
+     0     0 -19275.335    0   79 -19228.000 -19275.335  0.25%     -    0s
+     0     0 -19275.335    0   74 -19228.000 -19275.335  0.25%     -    0s
+     0     0 -19275.335    0   74 -19228.000 -19275.335  0.25%     -    0s
+     0     0 -19275.335    0   78 -19228.000 -19275.335  0.25%     -    0s
+     0     0 -19275.335    0   91 -19228.000 -19275.335  0.25%     -    0s
+     0     0 -19275.335    0   92 -19228.000 -19275.335  0.25%     -    0s
+     0     0 -19275.335    0   92 -19228.000 -19275.335  0.25%     -    0s
+     0     0 -19275.335    0   92 -19228.000 -19275.335  0.25%     -    0s
+     0     2 -19275.335    0   92 -19228.000 -19275.335  0.25%     -    0s
+*  435   190              12    -19235.00011 -19275.334  0.21%  24.1    0s
+
+Cutting planes:
+  Cover: 76
+  Clique: 10
+  MIR: 7
+  StrongCG: 6
+  Inf proof: 3
+
+Explored 2181 nodes (57971 simplex iterations) in 0.80 seconds (0.80 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 9: -19235 -19228 -19120 ... 0
+No other solutions better than -19235
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (7.0874e-06) exceeds tolerance
+Best objective -1.923500011039e+04, best bound -1.923500011039e+04, gap 0.0000%

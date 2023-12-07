@@ -1,0 +1,61 @@
+
+Gurobi 9.5.0 (linux64) logging started Tue May  3 14:03:40 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/new1W_R25_M30_N100_seed4_DWcutsCT1_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 2143 rows, 3750 columns and 12684 nonzeros
+Model fingerprint: 0x996e7c2e
+Variable types: 0 continuous, 3750 integer (3750 binary)
+Coefficient statistics:
+  Matrix range     [1e-13, 2e+03]
+  Objective range  [7e+01, 9e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-14, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 725 rows and 989 columns
+Presolve time: 0.05s
+Presolved: 1418 rows, 2761 columns, 7807 nonzeros
+Found heuristic solution: objective -17291.00000
+Variable types: 0 continuous, 2761 integer (2761 binary)
+
+Root relaxation: objective -3.062376e+04, 3777 iterations, 0.07 seconds (0.06 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -30623.758    0   48 -17291.000 -30623.758  77.1%     -    0s
+H    0     0                    -30451.00000 -30623.758  0.57%     -    0s
+H    0     0                    -30484.00000 -30623.758  0.46%     -    0s
+     0     0 -30615.748    0   29 -30484.000 -30615.748  0.43%     -    0s
+     0     0 -30615.748    0   53 -30484.000 -30615.748  0.43%     -    0s
+     0     0 -30614.765    0   32 -30484.000 -30614.765  0.43%     -    0s
+H    0     0                    -30486.00000 -30614.765  0.42%     -    0s
+H    0     0                    -30512.00000 -30610.401  0.32%     -    0s
+H    0     0                    -30565.00000 -30610.401  0.15%     -    0s
+     0     0 -30599.071    0   29 -30565.000 -30599.071  0.11%     -    0s
+     0     0 -30599.071    0   13 -30565.000 -30599.071  0.11%     -    0s
+     0     0 -30590.762    0   18 -30565.000 -30590.762  0.08%     -    0s
+     0     0 -30578.674    0   26 -30565.000 -30578.674  0.04%     -    0s
+     0     0 -30578.674    0   52 -30565.000 -30578.674  0.04%     -    0s
+     0     0 -30574.002    0   32 -30565.000 -30574.002  0.03%     -    0s
+     0     0 -30574.002    0   10 -30565.000 -30574.002  0.03%     -    0s
+     0     0 -30565.000    0   18 -30565.000 -30565.000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 5
+  Lift-and-project: 1
+  Clique: 1
+  Zero half: 1
+
+Explored 1 nodes (5851 simplex iterations) in 0.31 seconds (0.20 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 7: -30565 -30512 -30486 ... 0
+No other solutions better than -30565
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -3.056500000000e+04, best bound -3.056500000000e+04, gap 0.0000%

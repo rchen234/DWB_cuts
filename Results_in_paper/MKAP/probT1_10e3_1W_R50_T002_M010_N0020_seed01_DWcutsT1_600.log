@@ -1,0 +1,52 @@
+
+Gurobi 9.5.0 (linux64) logging started Sun Apr 10 17:21:56 2022
+
+Set parameter LogFile to value "/local_workspace/chenrui/LogFiles/MKAP/probT1_10e3_1W_R50_T002_M010_N0020_seed01_DWcutsT1_600.log"
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 56 physical cores, 56 logical processors, using up to 4 threads
+Optimize a model with 90 rows, 220 columns and 867 nonzeros
+Model fingerprint: 0x7a015518
+Variable types: 0 continuous, 220 integer (220 binary)
+Coefficient statistics:
+  Matrix range     [8e-11, 1e+03]
+  Objective range  [8e+01, 7e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-11, 2e+02]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+Presolve removed 31 rows and 120 columns
+Presolve time: 0.00s
+Presolved: 59 rows, 100 columns, 378 nonzeros
+Found heuristic solution: objective -5004.000000
+Variable types: 0 continuous, 100 integer (100 binary)
+
+Root relaxation: objective -5.587002e+03, 93 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -5587.0016    0    6 -5004.0000 -5587.0016  11.7%     -    0s
+H    0     0                    -5539.000000 -5587.0016  0.87%     -    0s
+     0     0 -5587.0010    0    2 -5539.0000 -5587.0010  0.87%     -    0s
+H    0     0                    -5565.000000 -5587.0010  0.40%     -    0s
+     0     0 -5586.9984    0   12 -5565.0000 -5586.9984  0.40%     -    0s
+     0     0 -5586.9984    0    3 -5565.0000 -5586.9984  0.40%     -    0s
+     0     0 -5586.9984    0    2 -5565.0000 -5586.9984  0.40%     -    0s
+     0     0 -5572.2250    0    6 -5565.0000 -5572.2250  0.13%     -    0s
+
+Cutting planes:
+  Gomory: 4
+  Cover: 3
+  Clique: 3
+  Mod-K: 1
+
+Explored 1 nodes (154 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 4 (of 56 available processors)
+
+Solution count 6: -5565 -5539 -5418 ... 0
+No other solutions better than -5565
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -5.564999999943e+03, best bound -5.565000000000e+03, gap 0.0000%
